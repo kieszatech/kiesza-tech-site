@@ -1100,3 +1100,38 @@ body{
     color:#778c99;
   }
 }
+
+
+/* Mobile hero v6 — small saturation lift, preserve depth */
+@media(max-width:620px){
+  .stack-hero:before{
+    background:
+      radial-gradient(
+        ellipse 76% 62% at 50% 0%,
+        rgba(41,196,204,.145) 0%,
+        rgba(29,161,181,.095) 24%,
+        rgba(20,121,148,.052) 46%,
+        rgba(12,77,99,.020) 64%,
+        transparent 82%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(27,164,185,.062) 0%,
+        rgba(16,112,139,.034) 28%,
+        transparent 70%
+      );
+  }
+
+  .stack-hero h1 span{
+    color:#24ddd1;
+  }
+
+  .stack-hero .signal-line i{
+    background:linear-gradient(
+      90deg,
+      transparent,
+      rgba(36,151,169,.34),
+      rgba(23,51,67,.72)
+    );
+  }
+}
