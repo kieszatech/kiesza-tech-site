@@ -806,3 +806,124 @@ body{
     );
   }
 }
+
+
+/* Mobile hero v3 — broad desktop-style illuminated field */
+@media(max-width:620px){
+  body{
+    background:
+      linear-gradient(180deg,#050d14 0%,#040b11 100%);
+  }
+
+  .stack-hero{
+    position:relative;
+    isolation:isolate;
+    overflow:hidden;
+    background:
+      radial-gradient(
+        ellipse 115% 76% at 48% 48%,
+        rgba(34,211,197,.20) 0%,
+        rgba(34,211,197,.13) 24%,
+        rgba(34,211,197,.07) 44%,
+        rgba(34,211,197,.018) 66%,
+        transparent 80%
+      ),
+      radial-gradient(
+        ellipse 105% 78% at 92% 54%,
+        rgba(60,166,255,.16) 0%,
+        rgba(60,166,255,.085) 32%,
+        rgba(60,166,255,.025) 58%,
+        transparent 78%
+      ),
+      linear-gradient(
+        180deg,
+        #061019 0%,
+        #08202a 24%,
+        #0a3340 46%,
+        #0a3945 60%,
+        #082c37 76%,
+        #05151e 92%,
+        #040d14 100%
+      );
+  }
+
+  .stack-hero:before{
+    content:"";
+    display:block;
+    position:absolute;
+    z-index:-2;
+    inset:0;
+    pointer-events:none;
+    background:
+      radial-gradient(
+        ellipse 92% 54% at 47% 57%,
+        rgba(34,211,197,.115) 0%,
+        rgba(34,211,197,.055) 42%,
+        transparent 76%
+      );
+  }
+
+  .stack-hero:after{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    inset:0;
+    width:auto;
+    height:auto;
+    left:auto;
+    top:auto;
+    transform:none;
+    border-radius:0;
+    pointer-events:none;
+    background:
+      radial-gradient(
+        ellipse 72% 42% at 54% 49%,
+        rgba(95,233,224,.07) 0%,
+        transparent 72%
+      ),
+      linear-gradient(
+        90deg,
+        rgba(2,8,13,.30) 0%,
+        transparent 22%,
+        transparent 76%,
+        rgba(2,8,13,.28) 100%
+      );
+    filter:none;
+  }
+
+  .stack-hero h1,
+  .stack-hero h1 span,
+  .stack-hero .hero-subhead{
+    text-shadow:none;
+  }
+
+  .stack-hero h1{
+    color:#f4f8fb;
+  }
+
+  .stack-hero h1 span{
+    color:#2bd7cd;
+  }
+
+  .stack-hero .hero-subhead{
+    color:#f4f8fb;
+  }
+
+  .stack-hero .lede{
+    color:#aebfca;
+  }
+
+  .stack-hero .signal-line,
+  .stack-hero .scroll-cue{
+    color:#8299a7;
+  }
+
+  .stack-hero .signal-line i{
+    background:linear-gradient(
+      90deg,
+      transparent,
+      rgba(34,211,197,.34),
+      rgba(23,51,67,.75)
+    );
+  }
+}
