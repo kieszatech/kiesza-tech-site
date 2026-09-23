@@ -1,6 +1,186 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#050d14"><meta name="description" content="Kiesza Technologies presents BulletSTACK: BulletROUTE, BulletFLEET and BulletNAV."><title>Kiesza Technologies · BulletSTACK</title><link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="/assets/styles.css"></head><body><div class="page">
-<header class="site-header"><div class="wrap header-inner"><a class="kiesza-brand" href="/"><img class="kiesza-mark" src="/assets/kiesza-mark.svg" alt=""><span class="kiesza-copy"><b>KIESZA</b><span>TECHNOLOGIES LTD.</span></span></a><nav class="site-nav"><a class="active" href="/">Stack</a><a href="/route/">Route</a><a href="/fleet/">Fleet</a><a href="/nav/">Nav</a></nav><nav class="mobile-nav"><a href="/route/">ROUTE</a><a href="/fleet/">FLEET</a><a href="/nav/">NAV</a></nav></div></header>
-<main><section class="hero"><div class="wrap hero-inner"><div class="eyebrow">Kiesza Technologies Ltd. presents</div><h1>Explore the<br><span>BulletSTACK</span></h1><p class="lede">One connected operating system for commercial fleet routing, control and driver execution. Plan the route. Control the operation. Keep the driver moving.</p><div class="stack-zone"><button class="stack-trigger" aria-label="Explore the BulletSTACK">Bullet<span>STACK</span></button><div class="hover-hint">Hover to explore the stack</div><div class="product-reveal"><a class="product-card" href="/route/"><div class="product-logo route">Bullet<span>ROUTE</span></div><p>Vehicle-aware route intelligence built around the mission, the road state and the arrival that actually matters.</p><div class="card-link">Explore Route</div></a><a class="product-card" href="/fleet/"><div class="product-logo fleet">Bullet<span>FLEET</span></div><p>The Control Tower: drivers, vehicles, routes, shifts, live journeys, exceptions and operating context in one place.</p><div class="card-link">Explore Fleet</div></a><a class="product-card" href="/nav/"><div class="product-logo nav">Bullet<span>NAV</span></div><p>Driver-first route execution with live route state, vehicle context and an explicit CHECK ROUTE workflow.</p><div class="card-link">Explore Nav</div></a></div></div><div class="signal-line"><i></i>Plan · Control · Drive<i></i></div></div></section>
-<section class="section dark"><div class="wrap"><div class="section-head reveal"><div><div class="mini-kicker">One product family</div><h2>A closed operating loop.</h2></div><p>BulletROUTE makes the route decision. BulletFLEET turns it into an operational plan and keeps the Control Tower informed. BulletNAV executes it with the driver and feeds live progress back into the stack.</p></div><div class="feature-grid reveal"><article class="feature"><span class="num">01</span><h3>Decide</h3><p>Plan against the exact vehicle, timing requirement, required stops and current road conditions.</p></article><article class="feature"><span class="num">02</span><h3>Control</h3><p>Assign people, vehicles, routes and shifts while keeping live journey state visible to operations.</p></article><article class="feature"><span class="num">03</span><h3>Execute</h3><p>Give the driver a clear, route-focused interface with explicit recheck and route-change decisions.</p></article></div></div></section>
-<section class="cta"><div class="wrap reveal"><div class="mini-kicker">Built for real operations</div><h2>See the whole stack working together.</h2><p>BulletSTACK is designed around the gap between a route being planned and a vehicle actually completing the journey.</p><a class="btn primary" href="mailto:jmcnally@kiesza.tech?subject=BulletSTACK%20demo">Request a demo</a></div></section></main>
-<footer class="site-footer"><div class="wrap footer-inner"><div><b>KIESZA TECHNOLOGIES LTD.</b><br>© 2026 Kiesza Technologies Ltd.</div><div class="footer-links"><a href="mailto:jmcnally@kiesza.tech">jmcnally@kiesza.tech</a><a href="https://www.kiesza.tech">kiesza.tech</a></div></div></footer></div><script src="/assets/site.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#050d14">
+  <meta name="description" content="BulletSTACK by Kiesza Technologies Ltd. Coming soon.">
+  <title>BulletSTACK · Coming Soon</title>
+  <link rel="icon" href="/assets/favicon.svg">
+  <style>
+    :root{
+      --bg:#050d14;
+      --panel:#091822;
+      --line:#173343;
+      --text:#f4f8fb;
+      --muted:#8298a6;
+      --cyan:#22d3c5;
+      --blue:#3ca6ff;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text)}
+    body{
+      min-height:100dvh;
+      font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+      background:
+        radial-gradient(circle at 20% -10%,rgba(34,211,197,.12),transparent 34%),
+        radial-gradient(circle at 90% 5%,rgba(60,166,255,.08),transparent 28%),
+        linear-gradient(180deg,#061019 0%,#040b11 100%);
+    }
+    .page{min-height:100dvh;display:flex;flex-direction:column}
+    header{height:82px;display:flex;align-items:center;border-bottom:1px solid rgba(23,51,67,.7)}
+    .wrap{width:min(1180px,calc(100% - 40px));margin:0 auto}
+    .brand{display:inline-flex;align-items:center;gap:11px;text-decoration:none;color:inherit}
+    .brand img{width:27px;height:27px;display:block}
+    .brand-copy{display:grid;line-height:1}
+    .brand-copy b{font-size:15px;letter-spacing:.24em}
+    .brand-copy span{margin-top:6px;font-size:7px;letter-spacing:.26em;color:var(--blue)}
+    main{flex:1;display:grid;place-items:center;padding:74px 0 90px}
+    .hero{text-align:center;max-width:920px;margin:auto}
+    .eyebrow{font-size:11px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:#89a2b2}
+    h1{
+      margin:22px 0 0;
+      font-size:clamp(58px,10vw,128px);
+      line-height:.86;
+      letter-spacing:-.07em;
+      font-weight:950;
+    }
+    h1 span{color:var(--cyan)}
+    .coming{
+      margin:24px 0 0;
+      font-size:clamp(25px,3vw,38px);
+      line-height:1.1;
+      letter-spacing:-.035em;
+      font-weight:800;
+    }
+    .lede{
+      max-width:690px;
+      margin:18px auto 0;
+      color:#9bb0bc;
+      font-size:clamp(15px,1.6vw,18px);
+      line-height:1.7;
+    }
+    .products{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:28px 0 0}
+    .products span{
+      border:1px solid #1b4052;
+      background:rgba(9,27,38,.72);
+      color:#bfd0da;
+      padding:8px 11px;
+      border-radius:999px;
+      font-size:10px;
+      font-weight:850;
+      letter-spacing:.12em;
+    }
+    .signup{
+      width:min(620px,100%);
+      margin:42px auto 0;
+      padding:18px;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:linear-gradient(180deg,rgba(11,29,40,.86),rgba(7,20,29,.86));
+      box-shadow:0 24px 80px rgba(0,0,0,.25);
+    }
+    .signup h2{margin:0;font-size:17px;letter-spacing:-.02em}
+    .signup p{margin:7px 0 15px;color:var(--muted);font-size:12px;line-height:1.5}
+    form{display:grid;grid-template-columns:1fr auto;gap:9px}
+    input{
+      min-width:0;
+      height:50px;
+      border:1px solid #214456;
+      border-radius:10px;
+      background:#06141d;
+      color:white;
+      padding:0 14px;
+      outline:none;
+      font:inherit;
+      font-size:15px;
+    }
+    input:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(34,211,197,.08)}
+    button{
+      height:50px;
+      border:0;
+      border-radius:10px;
+      background:linear-gradient(180deg,#38e0d5,#20bdb5);
+      color:#031214;
+      padding:0 18px;
+      font:inherit;
+      font-size:12px;
+      font-weight:900;
+      letter-spacing:.03em;
+      cursor:pointer;
+    }
+    button:hover{filter:brightness(1.04)}
+    .fine{margin-top:9px;color:#67818f;font-size:9px;line-height:1.5}
+    footer{padding:22px 0 28px;border-top:1px solid rgba(23,51,67,.55);color:#627b89;font-size:10px}
+    .footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}
+    footer a{color:#829ba9;text-decoration:none}
+    @media(max-width:620px){
+      header{height:72px}
+      .wrap{width:min(100% - 28px,1180px)}
+      main{padding:55px 0 70px}
+      h1{font-size:clamp(56px,20vw,88px)}
+      .coming{margin-top:20px}
+      form{grid-template-columns:1fr}
+      button{width:100%}
+      .footer-inner{align-items:flex-start;flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="Kiesza Technologies Ltd.">
+        <img src="/assets/kiesza-mark.svg" alt="">
+        <span class="brand-copy"><b>KIESZA</b><span>TECHNOLOGIES LTD.</span></span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="hero">
+        <div class="eyebrow">Kiesza Technologies Ltd. presents</div>
+        <h1>Bullet<span>STACK</span></h1>
+        <div class="coming">Coming soon.</div>
+        <p class="lede">A connected operating system for commercial fleet routing, control and driver execution.</p>
+
+        <div class="products" aria-label="BulletSTACK products">
+          <span>BulletROUTE</span>
+          <span>BulletFLEET</span>
+          <span>BulletNAV</span>
+        </div>
+
+        <div class="signup">
+          <h2>Register for updates</h2>
+          <p>Be first to hear when BulletSTACK is ready to show.</p>
+          <form id="updatesForm">
+            <input id="email" type="email" autocomplete="email" placeholder="Your email address" required aria-label="Email address">
+            <button type="submit">Register interest</button>
+          </form>
+          <div class="fine">For now, registration opens a pre-filled email so you stay in control of what gets sent.</div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div>© 2026 Kiesza Technologies Ltd.</div>
+      <a href="mailto:jmcnally@kiesza.tech">jmcnally@kiesza.tech</a>
+    </div>
+  </footer>
+</div>
+
+<script>
+  document.getElementById('updatesForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var email = document.getElementById('email').value.trim();
+    if(!email) return;
+    var subject = encodeURIComponent('BulletSTACK updates registration');
+    var body = encodeURIComponent('Please register ' + email + ' for BulletSTACK product updates.');
+    window.location.href = 'mailto:jmcnally@kiesza.tech?subject=' + subject + '&body=' + body;
+  });
+</script>
+</body>
+</html>
