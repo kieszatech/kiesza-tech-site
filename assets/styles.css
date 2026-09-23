@@ -1035,3 +1035,68 @@ body{
     );
   }
 }
+
+
+/* Mobile hero v5 — deepen the downlight without losing the desktop feel */
+@media(max-width:620px){
+  .stack-hero{
+    background:
+      linear-gradient(
+        180deg,
+        #050e15 0%,
+        #06131b 22%,
+        #061119 56%,
+        #050d14 82%,
+        #030a0f 100%
+      );
+  }
+
+  .stack-hero:before{
+    left:-18%;
+    right:-18%;
+    top:0;
+    height:70%;
+    background:
+      radial-gradient(
+        ellipse 76% 62% at 50% 0%,
+        rgba(49,181,191,.135) 0%,
+        rgba(37,151,168,.085) 24%,
+        rgba(26,111,132,.045) 46%,
+        rgba(14,69,87,.018) 64%,
+        transparent 82%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(35,150,168,.055) 0%,
+        rgba(21,102,122,.03) 28%,
+        transparent 70%
+      );
+    filter:blur(11px);
+  }
+
+  .stack-hero:after{
+    background:
+      linear-gradient(
+        90deg,
+        rgba(1,6,10,.28) 0%,
+        transparent 18%,
+        transparent 82%,
+        rgba(1,6,10,.28) 100%
+      ),
+      linear-gradient(
+        180deg,
+        transparent 0%,
+        transparent 66%,
+        rgba(1,6,10,.27) 100%
+      );
+  }
+
+  .stack-hero .lede{
+    color:#a0b2bd;
+  }
+
+  .stack-hero .signal-line,
+  .stack-hero .scroll-cue{
+    color:#778c99;
+  }
+}
