@@ -701,3 +701,108 @@ body{
     color:#6f8694;
   }
 }
+
+
+/* Mobile hero light treatment — recreate desktop bloom, not a flat teal wash */
+@media(max-width:620px){
+  body{
+    background:
+      radial-gradient(circle at 50% 18%,rgba(34,211,197,.055),transparent 24%),
+      radial-gradient(circle at 88% 6%,rgba(60,166,255,.05),transparent 20%),
+      linear-gradient(180deg,#03090e 0%,#041018 44%,#03080d 100%);
+  }
+
+  .stack-hero{
+    position:relative;
+    isolation:isolate;
+    overflow:hidden;
+    background:
+      linear-gradient(180deg,rgba(4,12,18,.2),rgba(3,9,14,.06));
+  }
+
+  .stack-hero:before{
+    content:"";
+    display:block;
+    position:absolute;
+    z-index:-2;
+    inset:-18% -34% -8%;
+    pointer-events:none;
+    background:
+      radial-gradient(
+        ellipse at 50% 43%,
+        rgba(34,211,197,.25) 0%,
+        rgba(34,211,197,.14) 18%,
+        rgba(34,211,197,.065) 34%,
+        rgba(34,211,197,.018) 50%,
+        transparent 68%
+      ),
+      radial-gradient(
+        ellipse at 76% 18%,
+        rgba(60,166,255,.16) 0%,
+        rgba(60,166,255,.07) 24%,
+        transparent 52%
+      );
+    filter:blur(2px);
+  }
+
+  .stack-hero:after{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    left:50%;
+    top:43%;
+    width:94vw;
+    height:58vw;
+    transform:translate(-50%,-50%);
+    pointer-events:none;
+    border-radius:50%;
+    background:radial-gradient(
+      ellipse at center,
+      rgba(34,211,197,.105) 0%,
+      rgba(34,211,197,.038) 38%,
+      transparent 72%
+    );
+    filter:blur(18px);
+  }
+
+  .stack-hero .hero-inner{
+    position:relative;
+    z-index:1;
+  }
+
+  .stack-hero h1{
+    text-shadow:
+      0 0 28px rgba(34,211,197,.055),
+      0 0 72px rgba(34,211,197,.035);
+  }
+
+  .stack-hero h1 span{
+    color:#2adbd1;
+    text-shadow:
+      0 0 20px rgba(34,211,197,.16),
+      0 0 54px rgba(34,211,197,.08);
+  }
+
+  .stack-hero .hero-subhead{
+    color:#f2f7fa;
+    text-shadow:0 2px 24px rgba(0,0,0,.4);
+  }
+
+  .stack-hero .lede{
+    color:#a7bac6;
+  }
+
+  .stack-hero .signal-line,
+  .stack-hero .scroll-cue{
+    color:#748d9a;
+  }
+
+  .stack-hero .signal-line i{
+    background:linear-gradient(
+      90deg,
+      transparent,
+      rgba(34,211,197,.28),
+      rgba(23,51,67,.75)
+    );
+  }
+}
