@@ -637,3 +637,67 @@ body{
   .product-chapter-inner{transition:none}
   .scroll-product.reveal .product-chapter-inner{opacity:1;transform:none}
 }
+
+
+/* Mobile colour correction — match desktop tone and contrast */
+@media(max-width:620px){
+  body{
+    background:
+      radial-gradient(circle at 18% -18%,rgba(34,211,197,.07),transparent 28%),
+      radial-gradient(circle at 92% 0%,rgba(60,166,255,.05),transparent 24%),
+      linear-gradient(180deg,#040b11 0%,#05101a 42%,#03080d 100%);
+  }
+
+  .stack-hero{
+    background:
+      linear-gradient(180deg,rgba(7,20,29,.82),rgba(4,12,18,.35));
+  }
+
+  .hero,
+  .scroll-product,
+  .section.dark,
+  .cta{
+    background-color:transparent;
+  }
+
+  .hero h1,
+  .product-hero h1,
+  .product-chapter-copy .product-logo{
+    color:#f3f7fa;
+  }
+
+  .hero h1 span,
+  .product-hero h1 span,
+  .product-chapter-copy .product-logo span{
+    color:#27d6cd;
+  }
+
+  .hero-subhead{
+    color:#eef4f7;
+  }
+
+  .lede,
+  .product-hero p,
+  .product-chapter-copy>p,
+  .section-head p,
+  .cta p{
+    color:#9eb0bc;
+  }
+
+  .mobile-nav a{
+    color:#93a6b3;
+  }
+
+  .mobile-nav a:hover,
+  .mobile-nav a:active{
+    color:#f4f8fb;
+  }
+
+  .signal-line,
+  .scroll-cue,
+  .mini-kicker,
+  .footer-links a,
+  .site-footer{
+    color:#6f8694;
+  }
+}
