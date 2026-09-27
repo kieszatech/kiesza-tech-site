@@ -1,0 +1,24 @@
+name: Handover package 2026-09-27
+on:
+  push:
+    branches:
+      - pack/handover-2026-09-27
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact website snapshot
+        uses: actions/checkout@v4
+        with:
+          ref: c361a65a9d1e75f3d484c64e0367da42fdc1b676
+          fetch-depth: 1
+      - name: Build source snapshot
+        run: |
+          rm -rf .git
+          zip -r Kiesza_Website_full-site_c361a65a_2026-09-27.zip . -x '*.DS_Store'
+      - name: Upload snapshot
+        uses: actions/upload-artifact@v4
+        with:
+          name: Kiesza_Website_full-site_c361a65a_2026-09-27
+          path: Kiesza_Website_full-site_c361a65a_2026-09-27.zip
+          if-no-files-found: error
