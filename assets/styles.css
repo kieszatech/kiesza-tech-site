@@ -1135,3 +1135,41 @@ body{
     );
   }
 }
+
+/* Readable spacing across desktop and mobile — 27 September 2026 */
+.hero h1{line-height:1}
+.hero-subhead{margin-top:32px;line-height:1.25}
+.hero .lede{max-width:640px;margin-top:22px;line-height:1.75}
+.signal-line{margin-top:36px}
+.scroll-cue{margin-top:32px}
+.product-chapter-inner{gap:clamp(36px,6vw,80px)}
+.product-chapter-copy .product-logo{margin:24px 0 20px;line-height:1.1}
+.product-chapter-copy>p{line-height:1.75;margin-bottom:28px}
+.product-tagline{padding:10px 14px;line-height:1.4;letter-spacing:.08em;color:var(--cyan);border-color:rgba(34,211,197,.28);background:rgba(34,211,197,.07)}
+.product-tagline i{background:var(--cyan)}
+.feature-grid,.fit-strip{gap:20px}
+.feature,.fit-item{padding:28px}
+.feature h3{margin:20px 0 12px;font-size:18px}
+.feature p,.fit-item p{font-size:14px;line-height:1.7}
+.btn{min-height:48px;padding:12px 20px;line-height:1.4}
+.section-head h2,.cta h2{line-height:1.12}
+.section-head{gap:36px;margin-bottom:40px}
+.site-footer{line-height:1.8}
+@media(max-width:620px){
+ .wrap,.hero-inner{width:calc(100% - 40px)}
+ .hero h1{font-size:clamp(42px,12.8vw,72px)}
+ .hero-subhead{margin-top:26px;font-size:26px}
+ .hero .lede{margin-top:18px;font-size:15px;line-height:1.7}
+ .product-chapter-inner{gap:32px}
+ .product-chapter-copy .product-logo{font-size:clamp(38px,11vw,54px)}
+ .product-chapter-copy>p,.product-hero p{font-size:16px;line-height:1.7}
+ .feature-grid,.fit-strip{gap:16px}
+ .feature,.fit-item{padding:24px}
+ .section-head{gap:24px}
+ .mobile-nav{gap:0}
+ .mobile-nav a{min-height:44px;display:flex;align-items:center;padding:8px;font-size:10px;letter-spacing:.03em}
+ .header-inner{gap:12px}
+ .kiesza-copy b{font-size:12px}
+ .kiesza-copy span{font-size:6px}
+ .product-hero h1{font-size:clamp(40px,12vw,64px)}
+}
