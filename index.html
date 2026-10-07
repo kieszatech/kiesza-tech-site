@@ -66,6 +66,41 @@
       footer{padding:20px 0 calc(20px + env(safe-area-inset-bottom))}
     }
     @media(max-width:360px){.wrap{width:calc(100% - 32px)}.products{gap:6px}.products>span{padding-inline:9px;font-size:11px}.footer-inner{justify-content:center;text-align:center;gap:8px}}
+
+/* NAV-inspired neutral smoked glass · 2026-10-07 */
+:root{--cyan:#16d3bd;--text:#f8fafb;--muted:#b4c0c7}
+body{background:radial-gradient(ellipse at 18% 25%,rgba(16,192,167,.18),transparent 48%),radial-gradient(ellipse at 85% 60%,rgba(74,118,152,.15),transparent 48%),linear-gradient(155deg,#0b1117,#04090d 75%);background-attachment:fixed}
+header{background:linear-gradient(120deg,rgba(255,255,255,.055),rgba(255,255,255,.012));border-bottom:1px solid rgba(255,255,255,.12);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);box-shadow:inset 0 1px 0 rgba(255,255,255,.08)}
+.brand-copy span{color:var(--cyan)}
+h1{text-shadow:0 4px 28px rgba(0,0,0,.25)}
+h1 span{color:var(--cyan);text-shadow:0 0 40px rgba(22,211,189,.12)}
+.products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:min(360px,100%);gap:12px}
+.products>span{min-height:48px;padding:13px 22px;font-size:15px;border-radius:16px}
+.products>.route{grid-column:1/-1;justify-self:center;width:calc((100% - 12px)/2)}
+.products>span,.signup,button{border:1px solid rgba(255,255,255,.19);background:linear-gradient(155deg,rgba(255,255,255,.13),rgba(255,255,255,.035) 48%,rgba(255,255,255,.06));backdrop-filter:blur(24px) saturate(115%);-webkit-backdrop-filter:blur(24px) saturate(115%);box-shadow:inset 0 1px 0 rgba(255,255,255,.24),inset 0 -1px 0 rgba(0,0,0,.35),0 12px 30px rgba(0,0,0,.22)}
+.signup{position:relative;border-radius:24px;background:linear-gradient(135deg,rgba(255,255,255,.105),rgba(255,255,255,.025) 55%,rgba(255,255,255,.055));box-shadow:inset 0 1px 0 rgba(255,255,255,.24),inset 0 -1px 0 rgba(0,0,0,.45),0 28px 70px rgba(0,0,0,.32)}
+input{border:1px solid rgba(255,255,255,.16);background:rgba(3,7,10,.4);box-shadow:inset 0 2px 6px rgba(0,0,0,.2);color:var(--text)}
+input::placeholder{color:#a8b5bd}
+button{color:var(--cyan);text-shadow:0 1px 6px rgba(0,0,0,.3)}
+button:hover{background:linear-gradient(155deg,rgba(255,255,255,.2),rgba(255,255,255,.07));border-color:rgba(255,255,255,.35)}
+.fine{color:#a4b2ba}
+footer{border-color:rgba(255,255,255,.1);color:#9eafb9}
+footer a{color:#bcc8cf}
+@media(max-width:620px){
+ .products{gap:10px;width:min(320px,100%)}
+ .products>span{min-height:44px;padding:11px 16px;font-size:14px}
+ .products>.route{width:calc((100% - 10px)/2)}
+ .signup{border-radius:20px}
+}
+@media(prefers-reduced-transparency:reduce){
+ header,.products>span,.signup,button{backdrop-filter:none;-webkit-backdrop-filter:none;background:#20262b}
+ input{background:#10171c}
+}
+@media(prefers-contrast:more){
+ :root{--muted:#e0e7eb}
+ .products>span,.signup,button,input{border-color:#b4c0c7}
+ .fine,footer,footer a{color:#e0e7eb}
+}
 </style>
 </head>
 <body>
@@ -88,9 +123,9 @@
         <p class="lede">A connected operating system for commercial fleet routing, control and driver execution.</p>
 
         <div class="products" aria-label="BulletSTACK products">
-          <span>Bullet<b>ROUTE</b></span>
-          <span>Bullet<b>FLEET</b></span>
           <span>Bullet<b>NAV</b></span>
+          <span>Bullet<b>FLEET</b></span>
+          <span class="route">Bullet<b>ROUTE</b></span>
         </div>
 
         <div class="signup">
