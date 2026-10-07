@@ -76,7 +76,7 @@ h1{text-shadow:0 4px 28px rgba(0,0,0,.25)}
 h1 span{color:var(--cyan);text-shadow:0 0 40px rgba(22,211,189,.12)}
 .products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:min(360px,100%);gap:12px}
 .products>span{min-height:48px;padding:13px 22px;font-size:15px;border-radius:16px}
-.products>.route{grid-column:1/-1;justify-self:center;width:calc((100% - 12px)/2)}
+.products>.route{grid-column:1/-1;justify-self:stretch;width:100%}
 .products>span,.signup,button{border:1px solid rgba(255,255,255,.19);background:linear-gradient(155deg,rgba(255,255,255,.13),rgba(255,255,255,.035) 48%,rgba(255,255,255,.06));backdrop-filter:blur(24px) saturate(115%);-webkit-backdrop-filter:blur(24px) saturate(115%);box-shadow:inset 0 1px 0 rgba(255,255,255,.24),inset 0 -1px 0 rgba(0,0,0,.35),0 12px 30px rgba(0,0,0,.22)}
 .signup{position:relative;border-radius:24px;background:linear-gradient(135deg,rgba(255,255,255,.105),rgba(255,255,255,.025) 55%,rgba(255,255,255,.055));box-shadow:inset 0 1px 0 rgba(255,255,255,.24),inset 0 -1px 0 rgba(0,0,0,.45),0 28px 70px rgba(0,0,0,.32)}
 input{border:1px solid rgba(255,255,255,.16);background:rgba(3,7,10,.4);box-shadow:inset 0 2px 6px rgba(0,0,0,.2);color:var(--text)}
@@ -89,7 +89,7 @@ footer a{color:#bcc8cf}
 @media(max-width:620px){
  .products{gap:10px;width:min(320px,100%)}
  .products>span{min-height:44px;padding:11px 16px;font-size:14px}
- .products>.route{width:calc((100% - 10px)/2)}
+ .products>.route{width:100%}
  .signup{border-radius:20px}
 }
 @media(prefers-reduced-transparency:reduce){
